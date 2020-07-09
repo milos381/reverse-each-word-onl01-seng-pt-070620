@@ -5,4 +5,9 @@ def reverse_each_word(string)
     my_new << words.reverse #creating new array
   end
   my_new.join(" ") #array to string
+
+  splitword.collect do |wordsTwo|
+    my_new_collect << wordsTwo.reverse
+  end
+    my_new_collect.join(" ")
 end
